@@ -31,6 +31,11 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'start',
+    'bulk_email_sender',
+    'free_ebooks',
+    'image_resizer',
+    'resume_maker',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
