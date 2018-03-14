@@ -18,5 +18,9 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('start/',include('start.urls')),
+    path('',include('start.urls')),
+    path('bulk_email_sender/',include('bulk_email_sender.urls')),
+    path('free_ebooks/',include('free_ebooks.urls')),
+    path('image_resizer/',include('image_resizer.urls')),
+    path('resume_maker/',include('resume_maker.urls')),
 ]
