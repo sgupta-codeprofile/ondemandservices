@@ -3,4 +3,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-    return render(request,'free_ebooks/header.html',{})
+    return render(request,'free_ebooks/index.html',{})

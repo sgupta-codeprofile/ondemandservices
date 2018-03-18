@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Free Ebooks</title>
+    <title>Ondemandservices</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
@@ -18,15 +18,22 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="#">App name</a>
+      <a class="navbar-brand" href="#">Home</a>
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
-                    <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
+                    <li><a href="{% url 'free_ebooks:index' %} "><span class="glyphicon glyphicon-book"> Free-ebooks</span></a></li>
+                    <li><a href="{% url 'image_resizer:index' %}"><span class="glyphicon glyphicon-camera">&nbspImage-resizer</span></a></li>
+                    <li><a href="{% url 'bulk_email_sender:index' %}"><span class="glyphicon glyphicon-envelope">&nbspBulk-email-sender</span></a></li>
+                    <li><a href="{% url 'resume_maker:index' %}"><span class="glyphicon glyphicon-th">&nbspResume-maker</span></a></li>
+
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
-                    <li><button class="btn btn-danger navbar-btn">Login with google</button></li>
+                    {% if user.is_authenticated %}
+                    <li><button class="btn btn-success navbar-btn"> {{user.username}}</button></li>
+                    {% else %}
+                    <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
+                    {% endif %}
                 </ul>
         <!-- add something in right
             <ul class="nav navbar-collapse navbar-right">
@@ -37,7 +44,8 @@
   </div><!-- end container fluid of nav -->
 </nav><!-- end nevigation bar -->
 
-
+{% block index %}
+{% endblock%}
 
 
 

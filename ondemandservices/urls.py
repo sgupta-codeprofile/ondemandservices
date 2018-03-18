@@ -15,12 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from django.contrib.auth import views
+from start.views import index
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',include('start.urls')),
+    path('auth/', include('social_django.urls', namespace='social')), #for social auth
+    path('logout/',views.logout,name='logout'),
     path('bulk_email_sender/',include('bulk_email_sender.urls')),
     path('free_ebooks/',include('free_ebooks.urls')),
     path('image_resizer/',include('image_resizer.urls')),
     path('resume_maker/',include('resume_maker.urls')),
+    path('start/',index ,name='home'),
+
 ]
