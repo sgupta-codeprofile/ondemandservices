@@ -5,14 +5,51 @@
     <meta charset="UTF-8">
     <title>Ondemandservices</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
-       <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
-       <link rel=:stylesheet" href="{% static 'free_ebooks/css/bootstrap-theme.min.css' %}">
+        <link rel="stylesheet" href="{% static 'start/css/bootstrap.min.css' %}">
+       <script src="{% static 'start/css/bootstrap.min.js' %}"></script>
+       <link rel=stylesheet" href="{% static 'start/css/bootstrap-theme.min.css' %}">
+     <link rel="stylesheet" href="{% static 'start/css/custom.css' %}">
+    <link rel="stylesheet" href="https://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css" />
+<link rel="stylesheet" href="https://www.learncodeonline.in/assets/css/plugins.min.css" />
+
+<style type="text/css">
+
+.footer {
+    position: fixed;
+    padding-top:5px;
+    padding-bottom:5px;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #5F5F5F;
+    color: white;
+    text-align: left;
+
+}
+.footer a{color:white; padding:1px;text-decoration:none;}
+.footer a:hover{color:#FF9800;}
+div#line1 span#a {
+  display: inline;
+}
+
+div#line1:hover span#a {
+  display: none;
+}
+
+div#line1 span#b {
+  display: none;
+}
+
+div#line1:hover span#b {
+  display: inline;
+}
+</style>
+
 </head>
 <body>
-<nav class="navbar navbar-inverse"><!-- start navigation bar -->
+<nav class="navbar navbar-inverse" id="234"><!-- start navigation bar -->
   <div class="container-fluid"><!-- start container fluid of nav -->
-    <div class="navbar-header"><!-- start navbar header -->
+    <div class="navbar-header" id="check"><!-- start navbar header -->
          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -30,7 +67,8 @@
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
-                    <li><button class="btn btn-success navbar-btn"> {{user.username}}</button></li>
+                    <script>function changetext(){ var c=document.getElementById("change").innerHTML='Logout';} </script>
+                    <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext()"><span id="change">{{user.username}}</span></div></button></li>
                     {% else %}
                     <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
                     {% endif %}
@@ -43,7 +81,7 @@
     </div>
   </div><!-- end container fluid of nav -->
 </nav><!-- end nevigation bar -->
-
+<div style="clear:both;"></div>
 {% block index %}
 {% endblock%}
 

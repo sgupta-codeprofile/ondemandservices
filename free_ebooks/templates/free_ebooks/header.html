@@ -8,17 +8,7 @@
         <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
        <link rel=:stylesheet" href="{% static 'free_ebooks/css/bootstrap-theme.min.css' %}">
-    <style type='text/css'>
-    .list-group li {
-    list-style: none;
-}
-.panel-info, .panel-rating, .panel-more1 {
-    float: left;
-    margin: 0 10px;
-}
-
-
-    </style>
+         <link rel="stylesheet" href="{% static 'free_ebooks/css/custom.css' %}">
 </head>
 <body>
 <nav class="navbar navbar-inverse"><!-- start navigation bar -->
@@ -54,6 +44,8 @@
 
 {% block index %}
 
+{% endblock %}
+{% block add_free_ebooks %}
 {% endblock %}
 
 
