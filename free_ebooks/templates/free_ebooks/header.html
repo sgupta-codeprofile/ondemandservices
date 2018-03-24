@@ -9,6 +9,26 @@
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
        <link rel=:stylesheet" href="{% static 'free_ebooks/css/bootstrap-theme.min.css' %}">
          <link rel="stylesheet" href="{% static 'free_ebooks/css/custom.css' %}">
+    <style type="text/css">
+        .btn-blog {
+    color: #ffffff;
+    background-color: #37d980;
+    border-color: #37d980;
+    border-radius:0;
+    margin-bottom:10px
+}
+.btn-blog:hover,
+.btn-blog:focus,
+.btn-blog:active,
+.btn-blog.active,
+.open .dropdown-toggle.btn-blog {
+    color: white;
+    background-color:#34ca78;
+    border-color: #34ca78;
+}
+ h2{color:#34ca78;}
+ .margin10{margin-bottom:10px; margin-right:10px;}
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-inverse"><!-- start navigation bar -->
@@ -28,7 +48,9 @@
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
-                    <li><button class="btn btn-success navbar-btn"> {{user.username}}</button></li>
+                    <li><button class="btn btn-success navbar-btn"> {{user.username}}</button>
+                        <button class="btn btn-success navbar-btn"><a style="color:white;" href="{% url 'free_ebooks:add_ebooks1'%}"> Add Ebooks</a></button></li>
+
                     {% else %}
                     <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
                     {% endif %}

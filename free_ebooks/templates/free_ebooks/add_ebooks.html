@@ -3,7 +3,7 @@
 {% block add_free_ebooks %}
 
 
-<form action="#" enctype="multipart/form-data" method="POST">
+<form action="{% url 'free_ebooks:add_ebooks1' %}" enctype="multipart/form-data" method="POST">
     {%csrf_token%}
   <div class="form-group">
     {{form}}

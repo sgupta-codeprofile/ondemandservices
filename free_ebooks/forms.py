@@ -1,5 +1,5 @@
 from  django import forms
-
+from .models import add_ebook
 
 class input_ebook_detail(forms.Form):
       titles_name=forms.CharField(max_length=50,widget=forms.TextInput(attrs={'placeholder':'Enter title',
@@ -12,6 +12,10 @@ class input_ebook_detail(forms.Form):
           'class': 'form-control',
       }))
       input_image=forms.ImageField()
+
+      class Meta:
+          model = add_ebook
+
 
 
 
