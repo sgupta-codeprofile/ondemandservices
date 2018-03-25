@@ -2,10 +2,12 @@
 
 {% block add_free_ebooks %}
 
-
+<div class="col-sm-3"></div>
+<div class="col-sm-6"><!-- start form -->
 <form action="{% url 'free_ebooks:add_ebooks1' %}" enctype="multipart/form-data" method="POST">
     {%csrf_token%}
   <div class="form-group">
+    <tr><th><label for="change">Current user:</label></th><td><input readonly type="text" name="current_user" value="{{user.email}}" class="form-control"  maxlength="50" required /></td></tr>
     {{form}}
   </div>
   <div class="form-group">
@@ -13,5 +15,6 @@
   </div>
   <button type="submit" class="btn btn-default">Submit</button>
 </form>
-
+</div><!-- end form -->
+<div class="col-sm-3"></div>
 {% endblock%}

@@ -15,14 +15,21 @@
                      <article><p>
                          {{temp.description}}
                          </p></article>
-                     <a class="btn btn-blog pull-right marginBottom10" href="#">Download</a>
+                     <a class="btn btn-blog pull-right marginBottom10" href="{{temp.ebook_download.url}}">Download</a>
                  </div>
              {% endfor %}
      </div>
     <!-- end ebook display bock-->
 </div><!-- end container -->
    {% else %}
-<h2>Login first then come back</h2>
+<!-- jumbotron for alert -->
+<div class="container">
+  <div class="jumbotron">
+    <h1>Please signin first</h1>
+    <p><a href="{% url 'social:begin' 'google-oauth2' %}"><button class="btn btn-danger navbar-btn">Login with google</button></a>.</p>
+  </div>
+</div>
+<!-- end jumbotron alert-->
    {% endif %}  <!-- end if-->
 
 {% endblock %}

@@ -39,17 +39,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="#">App name</a>
+      <a class="navbar-brand" href="{% url 'free_ebooks:index' %}">Free-Ebooks</a>
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
-                    <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
+                    <li><a href="{% url 'free_ebooks:add_ebooks1'%}"><span class="glyphicon glyphicon-book">&nbspAdd-Ebooks</span></a></li>
+                   <!-- <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspunder-working</span></a></li>-->
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
-                    <li><button class="btn btn-success navbar-btn"> {{user.username}}</button>
-                        <button class="btn btn-success navbar-btn"><a style="color:white;" href="{% url 'free_ebooks:add_ebooks1'%}"> Add Ebooks</a></button></li>
+                    <script>function changetext(obj,text){ obj.innerText=text;}</script>
+                    <a href="{% url 'logout' %}" > <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext(this,'logout')" onmouseout="changetext(this,'{{user.username}}')">{{user.username}}</div></button></li></a>
 
                     {% else %}
                     <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>

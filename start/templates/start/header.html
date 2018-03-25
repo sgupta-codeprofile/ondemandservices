@@ -67,9 +67,7 @@ div#line1:hover span#b {
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
-                    <script>function changetext(obj,text){ obj.innerText=text;}
-
-                   </script>
+                    <script>function changetext(obj,text){ obj.innerText=text;}</script>
                     <a href="{% url 'logout' %}" > <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext(this,'logout')" onmouseout="changetext(this,'{{user.username}}')">{{user.username}}</div></button></li></a>
                     {% else %}
                     <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
