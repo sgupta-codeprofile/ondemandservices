@@ -1,0 +1,23 @@
+{% extends 'bulk_email_sender/header.html' %}
+
+{%block add_email%}
+<div class="col-sm-3"></div>
+
+<div class="col-sm-6">
+    <form method="POST" action="#" >
+        {%  csrf_token %}
+      <div class="form-group">
+         {{addemail}}
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+
+    </form>
+
+
+
+</div>
+
+<div class="col-sm-3"></div>
+
+{%endblock%}

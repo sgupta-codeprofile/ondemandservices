@@ -22,11 +22,17 @@
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
-                    <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
+                    <li><a href="{% url 'bulk_email_sender:add_email' %}"><span class="glyphicon glyphicon-cd">&nbspAdd-Email</span></a></li>
+                    <li><a href="{%url 'bulk_email_sender:send_in_bulk' %}"><span class="glyphicon glyphicon-music">&nbspSend_Bulk-email</span></a></li>
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
-                    <li><button class="btn btn-danger navbar-btn">Login with google</button></li>
+                    {% if user.is_authenticated %}
+                    <script>function changetext(obj,text){ obj.innerText=text;}</script>
+                    <a href="{% url 'logout' %}" > <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext(this,'logout')" onmouseout="changetext(this,'{{user.username}}')">{{user.username}}</div></button></li></a>
+
+                    {% else %}
+                    <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
+                    {% endif %}
                 </ul>
         <!-- add something in right
             <ul class="nav navbar-collapse navbar-right">
@@ -38,9 +44,13 @@
 </nav><!-- end nevigation bar -->
 
 
+{%block index %}
+{% endblock%}
 
-
-
+{%block add_email%}
+{%endblock%}
+{% block send_in_bulk %}
+{% endblock %}
 
 
 </body>

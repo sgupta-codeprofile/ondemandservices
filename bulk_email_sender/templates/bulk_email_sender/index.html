@@ -1,0 +1,36 @@
+{% extends 'bulk_email_sender/header.html' %}
+
+{%block index %}
+<div class="col-sm-2">
+    <h4 style="color:red;">Pre-settings</h4>
+    <p style="color:green;">
+        <em>
+        Before use this application, Please allow this <a href="https://myaccount.google.com/lesssecureapps">setting</a> from your google account.
+        </em>
+    </p>
+</div>
+
+
+
+<div class="col-sm-8">
+    <form method="POST"  action="#">
+        {%csrf_token%}
+        <div class="form-group">
+         <tr><th><label for="sender">Sender:</label></th><td><input readonly type="text"  placeholder="TO" class="form-control" value="geekydirect@gmail.com" maxlength="50" required id="id_reciver" /></td></tr>
+         {{form}}
+        </div>
+         <div class="form-group">
+           <button type="submit" class="btn btn-success">Send</button>
+         </div>
+
+    </form>
+</div>
+
+
+
+<div class="col-sm-2">
+    <h4 style="color:red;">This application is for only admin</h4>
+<p style="color:green;">WE are currently working on this application to make generic</p>
+</div>
+
+{% endblock%}

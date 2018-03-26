@@ -1,0 +1,32 @@
+{% extends 'bulk_email_sender/header.html' %}
+
+
+
+
+
+{% block send_in_bulk %}
+<div class="col-sm-3"></div>
+
+<div class="col-sm-6">
+    <form method="POST" action="#" >
+        {%  csrf_token %}
+      <div class="form-group">
+          <tr><th><label for="sender">Sender:</label></th><td><input readonly type="text"  placeholder="TO" class="form-control" value="geekydirect@gmail.com" maxlength="50" required id="anonymous" /></td></tr>
+          <tr><th><label for="reciver">Reciver:</label></th><td><input readonly type="text"  placeholder="TO" class="form-control" value="Retrive from database" maxlength="50" required id="anonymous" /></td></tr>
+
+         {{send_in_bulk_form}}
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+
+
+    </form>
+
+
+
+</div>
+
+<div class="col-sm-3"></div>
+
+
+
+{% endblock %}
