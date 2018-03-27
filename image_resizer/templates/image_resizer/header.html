@@ -26,7 +26,13 @@
                     <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
-                    <li><button class="btn btn-danger navbar-btn">Login with google</button></li>
+                    {% if user.is_authenticated %}
+                    <script>function changetext(obj,text){ obj.innerText=text;}</script>
+                    <a href="{% url 'logout' %}" > <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext(this,'logout')" onmouseout="changetext(this,'{{user.username}}')">{{user.username}}</div></button></li></a>
+
+                    {% else %}
+                    <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
+                    {% endif %}
                 </ul>
         <!-- add something in right
             <ul class="nav navbar-collapse navbar-right">
@@ -37,7 +43,8 @@
   </div><!-- end container fluid of nav -->
 </nav><!-- end nevigation bar -->
 
-
+{%block index%}
+{%endblock%}
 
 
 

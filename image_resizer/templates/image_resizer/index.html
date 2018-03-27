@@ -1,0 +1,34 @@
+{%extends 'image_resizer/header.html'%}
+
+{%block index%}
+<div class="col-sm-2">
+    {% if flag_for_form_validation is 1%}
+    <h4 style="color:red;">Problem arise in form validation</h4>
+    <p>Please try again</p>
+    {%endif%}
+</div>
+
+
+
+<div class="col-sm-8">
+    <form method="POST" enctype="multipart/form-data"  action="#">
+        {%csrf_token%}
+        <div class="form-group">
+
+         {{form}}
+        </div>
+         <div class="form-group">
+           <button type="submit" class="btn btn-success">Resize</button>
+         </div>
+
+    </form>
+</div>
+
+
+
+<div class="col-sm-2">
+
+</div>
+
+
+{%endblock%}
