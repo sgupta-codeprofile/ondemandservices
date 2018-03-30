@@ -82,5 +82,31 @@ class Resume(forms.Form):
     Score3= forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter percentage %',
                                                                       'class': 'form-control'
                                                                       }))
+    #Academic Project
+    #minor project
+    project_name1=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter project Title',
+                                                                      'class': 'form-control'
+                                                                      }))
+    project_duration1=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter Total Duration',
+                                                                      'class': 'form-control'
+                                                                      }))
+    project_description1=forms.CharField(label='',widget=forms.Textarea(attrs={'width':"50%", 'cols' : "70", 'rows': "10",
+                                                         'placeholder': 'Enter Description of your project',
+                                                         'class': 'form-control'
+                                                         }))
+    #major prject
+    project_name2=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter project Title',
+                                                                      'class': 'form-control'
+                                                                      }))
+    project_duration2=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter Total Duration',
+                                                                      'class': 'form-control'
+                                                                      }))
+    project_description2=forms.CharField(label='',widget=forms.Textarea(attrs={'width':"50%", 'cols' : "70", 'rows': "10",
+                                                         'placeholder': 'Enter Description of your project',
+                                                         'class': 'form-control'
+                                                         }))
+
+
+
 
 
