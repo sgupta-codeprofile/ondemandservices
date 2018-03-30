@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Free Ebooks</title>
+    <title>Image Resizer</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
@@ -18,12 +18,14 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="#">App name</a>
+      <a class="navbar-brand" href="{%url 'image_resizer:index'%}">Image Resizer</a>
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
+                    <!--
                     <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
                     <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
+                    -->
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
