@@ -1,10 +1,106 @@
 {% extends 'resume_maker/header.html'%}
 
 {%block index%}
-<div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="70"
-  aria-valuemin="0" aria-valuemax="100" style="width:10%">
-    10%
-  </div>
+<div class="col-sm-2">
+
 </div>
+
+
+
+<div class="col-sm-8">
+    <form method="POST"   action="#">
+        {%csrf_token%}
+        <div class="form-group">
+            <!-- row for first name and last name -->
+            <div class="row">
+                <div class="col-sm-6"><label for="first_name">First name:</label>{{form.first_name}}</div>
+                <div class="col-sm-6"><label for="Last_name">Last name:</label> {{form.last_name}}</div>
+            </div>
+            <!-- end row for first name and last name -->
+            <!-- start row for ccarrer_objectives -->
+            <div class="row">
+                <div class="col-sm-12">
+                    <label for="carrer_objectives">Select carrer_objectives</label>{{form.carrer_objectives}}</label>
+                </div>
+            </div>
+            <!-- end row for carrer_objectives -->
+            <!-- start technical_skills1 row -->
+            <hr>
+            <div class="row">
+                <div class="col-sm-12"><label for="technical_skills1">Technical skills-1</label> {{form.technical_skills1}} </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-12"><label for="technical_skills2">Technical skills-2</label> {{form.technical_skills1}} </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-12"><label for="technical_skills3">Technical skills-3</label> {{form.technical_skills1}} </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-12"><label for="technical_skills4">Technical skills-4</label> {{form.technical_skills1}} </div>
+            </div>
+             <div class="row">
+                <div class="col-sm-12"><label for="technical_skills5">Technical skills-5</label> {{form.technical_skills1}} </div>
+            </div>
+            <hr>
+            <!-- end technical_skills1 row -->
+            <!-- start eduction deatil row -->
+            <div class="row">
+
+                <div class="container col-sm-12">
+                   <h2>Enter Education Details</h2>
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Institue/School</th>
+                            <th>University/School</th>
+                            <th>Score</th>
+                        </tr>
+                        </thead>
+
+
+                        <tbody>
+                        <tr>
+                            <td>{{form.college1}}</td>
+                            <td>{{form.institute1}}</td>
+                            <td>{{form.university1}}</td>
+                            <td>{{form.Score1}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{form.college2}}</td>
+                            <td>{{form.institute2}}</td>
+                            <td>{{form.university2}}</td>
+                            <td>{{form.Score2}}</td>
+                        </tr>
+                        <tr>
+                            <td>{{form.college3}}</td>
+                            <td>{{form.institute3}}</td>
+                            <td>{{form.university3}}</td>
+                            <td>{{form.Score3}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div><!-- -->
+
+            <!-- end educaton detail row -->
+
+
+        </div>
+
+
+        <div class="form-group">
+           <button type="submit" class="btn btn-success">Make</button>
+         </div>
+
+    </form>
+</div>
+
+
+
+<div class="col-sm-2">
+
+</div>
+
 {%endblock%}
