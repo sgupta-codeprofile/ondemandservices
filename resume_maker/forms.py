@@ -105,6 +105,64 @@ class Resume(forms.Form):
                                                          'placeholder': 'Enter Description of your project',
                                                          'class': 'form-control'
                                                          }))
+    #industrial training
+    industrial_training =forms.CharField(label='',widget=forms.Textarea(attrs={'width':"50%", 'cols' : "70", 'rows': "10",
+                                                         'placeholder': 'Enter Description of Industrial training report EX:•'
+                                                                        '	Done 60 days training in cloud computing '
+                                                                        '(iaas, paas, saas) from 10-June-2017 to 10-August-2017. And so'
+                                                                        'on..... ',
+                                                         'class': 'form-control'
+                                                         }))
+    #personal qualities
+    personal_qualities1=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter personal quality',
+                                                                      'class': 'form-control'
+                                                                      }))
+    personal_qualities2=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter personal quality',
+                                                                      'class': 'form-control'
+                                                                      }))
+    #hobbey
+    hobby1=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter your hobby',
+                                                                      'class': 'form-control'
+                                                                      }))
+    hobby2=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter your hobbt',
+                                                                      'class': 'form-control'
+                                                                      }))
+    #Achievements
+    achievements1=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter your achievements',
+                                                                      'class': 'form-control'
+                                                                      }))
+    achievements2=forms.CharField(label='',widget=forms.TextInput(attrs={'placeholder': 'Enter your achievements',
+                                                                      'class': 'form-control'
+                                                                      }))
+    #personal profile
+    father_name = forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Enter your father name',
+                                                                            'class': 'form-control'
+                                                                            }))
+    mother_name= forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Enter your mother name',
+                                                                            'class': 'form-control'
+                                                                            }))
+    dob= forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'DOB',
+                                                                            'class': 'form-control'
+                                                                            }))
+    gender = forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Male/Female/Other',
+                                                                            'class': 'form-control'
+                                                                            }))
+    nationality = forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Nationality',
+                                                                            'class': 'form-control'
+                                                                            }))
+    status= forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': 'Enter single/married/divorced etc',
+                                                                            'class': 'form-control'
+                                                                            }))
+    languages = forms.CharField(label='', widget=forms.TextInput(attrs={'placeholder': ''
+                                                                                       'English/Hindi etc',
+                                                                            'class': 'form-control'
+                                                                            }))
+
+
+
+
+
+
 
 
 
