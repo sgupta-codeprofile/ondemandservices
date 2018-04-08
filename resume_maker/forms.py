@@ -17,7 +17,7 @@ class Resume(forms.Form):
     first_name=forms.CharField(label='First name:',max_length=100,widget=forms.TextInput(attrs={'placeholder':'First name',
                                                                             'class':'form-control'
                                                                             }))
-    last_name=forms.CharField(label='Last name:',max_length=100,widget=forms.TextInput(attrs={'placeholder':'First name',
+    last_name=forms.CharField(label='Last name:',max_length=100,widget=forms.TextInput(attrs={'placeholder':'Last name',
                                                                             'class':'form-control'
                                                                             }))
     carrer_objectives=forms.CharField(label='Select carrer object',widget=forms.Select(choices=carrer_object,attrs={'class':'form-control'}))
@@ -25,16 +25,16 @@ class Resume(forms.Form):
     technical_skills1=forms.CharField(widget=forms.TextInput(attrs={'placeholder':'Technical skills ex-c,c++,python etc',
                                                                             'class':'form-control'
                                                                             }))
-    technical_skills2 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name',
+    technical_skills2 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Technical skills ex-c,c++,python etc',
                                                                       'class': 'form-control'
                                                                       }))
-    technical_skills3 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name',
+    technical_skills3 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Technical skills ex-c,c++,python etc',
                                                                       'class': 'form-control'
                                                                       }))
-    technical_skills4 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name',
+    technical_skills4 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Technical skills ex-c,c++,python etc',
                                                                       'class': 'form-control'
                                                                       }))
-    technical_skills5 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'First name',
+    technical_skills5 = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Technical skills ex-c,c++,python etc',
                                                                       'class': 'form-control'
                                                                       }))
     #Education
