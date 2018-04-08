@@ -1,7 +1,7 @@
 {% extends 'start/header.html' %}
 
 {% block index %}
-<!-- all four here -->
+<!-- all five here -->
 <div class="container mt-4">
   <h2 class="text-center color-primary mb-2 wow fadeInDown animation-delay-4">Ondemandservices</h2>
   <p class="lead text-center aco wow fadeInDown animation-delay-5 mw-800 center-block mb-4"> Use Online services
@@ -46,8 +46,18 @@
       <a href="{% url 'resume_maker:index' %}" class="btn btn-danger btn-raised">Make my resume</a>
     </div>
   </div>
+    <div class="ms-feature col-lg-3 col-md-6 col-sm-6 card wow flipInX animation-delay-6">
+    <div class="text-center card-block">
+      <span class="ms-icon ms-icon-circle ms-icon-xxlg  color-danger">
+        <i class="glyphicon glyphicon-envelope"></i>
+      </span>
+      <h4 class="color-danger">Email-Recorder</h4>
+      <p class="">Record your market email anywhere<br> [@Database] <br> Just in one click.</p>
+      <a href="{% url 'email_recorder:index' %}" class="btn btn-danger btn-raised">Start record</a>
+    </div>
+  </div>
 </div>
-<!-- end all four here -->
+<!-- end all five here -->
 <footer>
     <div class="footer">
     <a href="#">Home</a>

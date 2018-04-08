@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resume Maker</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
+       <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
+       <link rel=:stylesheet" href="{% static 'free_ebooks/css/bootstrap-theme.min.css' %}">
+</head>
+<body>
+<nav class="navbar navbar-inverse"><!-- start navigation bar -->
+  <div class="container-fluid"><!-- start container fluid of nav -->
+    <div class="navbar-header"><!-- start navbar header -->
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+      <a class="navbar-brand" href="#">Resume maker</a>
+    </div>
+    <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="nav navbar-nav"><!--
+                    <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
+                    <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li> -->
+                </ul>
+                <ul class="nav navbar-collapse navbar-right">
+                    {% if user.is_authenticated %}
+                    <script>function changetext(obj,text){ obj.innerText=text;}</script>
+                    <a href="{% url 'logout' %}" > <li><button class="btn btn-success navbar-btn" ><div onmouseover="changetext(this,'logout')" onmouseout="changetext(this,'{{user.username}}')">{{user.username}}</div></button></li></a>
+
+                    {% else %}
+                    <a href="{% url 'social:begin' 'google-oauth2' %}"><li><button class="btn btn-danger navbar-btn">Login with google</button></li></a>
+                    {% endif %}
+                </ul>
+
+        <!-- add something in right
+            <ul class="nav navbar-collapse navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-log-in">Login</span></a> </li>
+            </ul>
+               end add something in right -->
+    </div>
+  </div><!-- end container fluid of nav -->
+</nav><!-- end nevigation bar -->
+
+
+{%block index%}
+{%endblock%}
+
+
+
+
+</body>
+</html>

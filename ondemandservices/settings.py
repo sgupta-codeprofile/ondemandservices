@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'email_recorder',
     'start',
     'bulk_email_sender',
     'free_ebooks',

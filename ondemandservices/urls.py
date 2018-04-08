@@ -30,6 +30,7 @@ urlpatterns = [
     path('image_resizer/',include('image_resizer.urls')),
     path('resume_maker/',include('resume_maker.urls')),
     path('start/',index ,name='home'),
+    path('email_recorder/',include('email_recorder.urls'))
 
 ]
 
