@@ -1,0 +1,15 @@
+{% extends 'email_recorder/header.html' %}
+
+{%block downloadlist%}
+
+
+<form method="POST action="#">
+    {% csrf_token %}
+ {{download_form}}
+<br>
+<button type="submit" class="#">Download</button>
+
+</form>
+
+
+{%endblock%}

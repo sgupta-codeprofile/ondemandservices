@@ -1,0 +1,15 @@
+{% extends 'email_recorder/header.html' %}
+
+{%block index%}
+
+<h3 style="color:red;">Hello this is index of email recorder</h3>
+
+<form method="POST action="#">
+    {% csrf_token %}
+ {{form}}
+<button type="submit" class="#">RECORD</button>
+
+</form>
+
+
+{%endblock%}
