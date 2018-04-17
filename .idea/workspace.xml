@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18411b45-22df-448b-96d4-b073f2369292" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change beforePath="$PROJECT_DIR$/email_recorder/admin.py" afterPath="$PROJECT_DIR$/email_recorder/admin.py" />
-      <change beforePath="$PROJECT_DIR$/email_recorder/forms.py" afterPath="$PROJECT_DIR$/email_recorder/forms.py" />
-      <change beforePath="$PROJECT_DIR$/email_recorder/templates/email_recorder/download_list.html" afterPath="$PROJECT_DIR$/email_recorder/templates/email_recorder/download_list.html" />
-      <change beforePath="$PROJECT_DIR$/email_recorder/templates/email_recorder/index.html" afterPath="$PROJECT_DIR$/email_recorder/templates/email_recorder/index.html" />
-      <change beforePath="$PROJECT_DIR$/email_recorder/views.py" afterPath="$PROJECT_DIR$/email_recorder/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -210,7 +204,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="904" />
@@ -317,7 +311,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17057101" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
