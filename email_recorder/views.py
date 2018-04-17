@@ -57,9 +57,7 @@ def index(request):
                     start_load_categories.cat_set.create(test='Crypto_currency')
                     return render(request,'email_recorder/startadd.html',{})
             else:
-
                 return HttpResponse("error in database")
-
         else:
             return render(request, 'email_recorder/index.html', {'form': catagories()})
     else:

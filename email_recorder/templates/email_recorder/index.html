@@ -1,8 +1,9 @@
 {% extends 'email_recorder/header.html' %}
 
 {%block index%}
-
-
+<div class="col-sm-3"></div>
+<!-- start form -->
+<div class="col-sm=6">
 <form method="POST" action="#">
     {% csrf_token %}
  {{form}}
@@ -10,5 +11,8 @@
 <button type="submit" class="btn btn-info">RECORD</button>
 
 </form>
+    <!-- end form  -->
+</div>
+<div class="col-sm-3"></div>
 
 {%endblock%}
