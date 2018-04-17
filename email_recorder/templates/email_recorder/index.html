@@ -4,12 +4,23 @@
 
 <h3 style="color:red;">Hello this is index of email recorder</h3>
 
-<form method="POST action="#">
+
+
+
+<form method="POST" action="#">
     {% csrf_token %}
  {{form}}
-<button type="submit" class="#">RECORD</button>
+<br>
+<button type="submit" class="btn btn-info">RECORD</button>
 
 </form>
+
+
+{%if warn is 2%}
+<h1>Please sign in first</h1>
+{%endif%}
+
+
 
 
 {%endblock%}

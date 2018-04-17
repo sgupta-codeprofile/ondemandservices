@@ -2,8 +2,12 @@ from django import forms
 
 
 input_option=[
-    ('first','Job Seeker'),
-    ('second','Eearn Money'),
+    ('Job_seekers','Job Seekers'),
+    ('Earn_money','Earn Money'),
+    ('Technology_lover','Technology'),
+    ('Gadgets_lover','Gadgets lover'),
+    ('Political','Political'),
+    ('Crypto_currency','Crypto currency')
 
 
 ]
