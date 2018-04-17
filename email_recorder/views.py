@@ -22,6 +22,11 @@ def index(request):
                         job_load = s.cat_set.get(test='Earn_Money')
                         job_load.liststore_set.create(heavylist=request.POST['user_email'])
                         return HttpResponse('success added')
+                    elif(get_data=='Technology_lover'):
+                        s = email.objects.get(pk=request.user.email)
+                        job_load = s.cat_set.get(test='Technology')
+                        job_load.liststore_set.create(heavylist=request.POST['user_email'])
+                        return HttpResponse('success added')
                     else:
                         return HttpResponse('fail')
                 except ObjectDoesNotExist:
