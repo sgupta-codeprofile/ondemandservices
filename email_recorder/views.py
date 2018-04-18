@@ -67,6 +67,30 @@ def index(request):
 
 def downloadlist(request):
     if request.user.is_authenticated:
-        return render(request,'email_recorder/download_list.html',{'download_form':download_list()})
+        if request.method=='POST':
+            check_r_data=download_list(request.POST)
+            if check_r_data.is_valid():
+                load_download_cat=request.POST['get_cat']
+                load_current_user=request.user.email
+                try:
+                    check_usr_existance=email.objects.get(pk=load_current_user)
+                    if(load_download_cat=='Job_Seekers'):
+                        load_primary_key=email.objects.get(pk=check_usr_existance)
+                        load_category = load_primary_key.cat_set.get(test=load_download_cat)
+                        load_email_list=load_category.liststore_set.all()
+                        for start_write in load_email_list:
+                            print(start_write)
+                        return HttpResponse('test mode resposnse = ok')
+                    else:
+                        return HttpResponse('code error pls contact admin')
+                except ObjectDoesNotExist:
+                    return HttpResponse("you don't have a data <br><br> first record the emails then come back")
+            else:
+                return render(request,'bulk_email_sender/somethingwentwrong.html',{})
+        else:
+            return render(request, 'email_recorder/download_list.html', {'download_form': download_list()})
+
+
+
     else:
         return request(request,'free_ebooks/signinfirst.html',{})

@@ -16,5 +16,15 @@ class catagories(forms.Form):
     user_email=forms.EmailField(label='Enter Email',widget=forms.EmailInput(attrs={'class':'form-control'}))
 
 
+input_option1=[
+    ('Job_Seekers','Job Seekers'),
+    ('Earn_money','Earn Money'),
+    ('Technology_lover','Technology'),
+    ('Gadgets_lover','Gadgets lover'),
+    ('Political','Political'),
+    ('Crypto_currency','Crypto currency')
+
+
+]
 class download_list(forms.Form):
-    get_cat=forms.CharField(label='Select Category',widget=forms.Select(choices=input_option,attrs={'class':'form-control'}))
+    get_cat=forms.CharField(label='Select Category',widget=forms.Select(choices=input_option1,attrs={'class':'form-control'}))
