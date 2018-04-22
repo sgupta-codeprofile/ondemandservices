@@ -7,13 +7,9 @@
 <div class="col-sm-6">
 <form target="_blank" method="POST" action="#">
     {% csrf_token %}
-
- {{download_form}}
-
-
-<br>
+    {{download_form}}
+    <br>
 <button target="_blank" type="submit" class="btn btn-info">Download</button>
-
 </form>
 </div>
 <div class="col-sm-3"></div>
