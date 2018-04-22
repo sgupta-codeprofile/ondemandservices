@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+
 class Maildata(models.Model):
     sender_data=models.CharField(max_length=50)
     reciver_data=models.CharField(max_length=50)

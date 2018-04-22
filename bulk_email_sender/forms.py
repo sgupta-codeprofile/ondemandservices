@@ -15,7 +15,7 @@ class Sendmail(forms.Form):
 
 
 class user_email_list(forms.Form):
-    add_email=forms.EmailField(widget=forms.EmailInput(attrs={'placeholder':'Enter email to add our database',
+    add_email=forms.EmailField(widget=forms.EmailInput(attrs={'placeholder':'Email address add in database',
                                                               'class':'form-control'
 
                                                               }))

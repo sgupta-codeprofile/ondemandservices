@@ -3,7 +3,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Free Ebooks</title>
+    <title>Email sender</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Email sender is the free application which help to send the email upto 150 peoples in a second. free email sender is used for digital matketing." />
+<meta name="keywords" content="email sender, free email sender, send email for digital marketing , bulk email sender">
+<meta name="author" content="shubham gupta">
+<meta name="language" content="english">
+<meta name="robots" content="noodp" />
+<meta name="robots" content="index,follow" />
+<meta name="email" content="shubhamguptaorg@gmail.com" />
+<meta name="copyright" content="ondemandservices">
+<meta name="audience" content="All"/>
+<meta property="og:type" content="Website" />
+<meta name="coverage" content="worldwide"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
@@ -18,12 +30,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-      <a class="navbar-brand" href="#">App name</a>
+      <a class="navbar-brand" href="{%url 'bulk_email_sender:index'%}">Email-Sender</a>
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
-                    <li><a href="{% url 'bulk_email_sender:add_email' %}"><span class="glyphicon glyphicon-cd">&nbspAdd-Email</span></a></li>
-                    <li><a href="{%url 'bulk_email_sender:send_in_bulk' %}"><span class="glyphicon glyphicon-music">&nbspSend_Bulk-email</span></a></li>
+                    <li><a href="{% url 'start:index' %}"><span class="glyphicon glyphicon-home">&nbspHome</span></a></li>
+                    <li><a href="{% url 'bulk_email_sender:add_email' %}"><span class="glyphicon glyphicon-plus">&nbspAdd-Email</span></a></li>
+                    <li><a href="{%url 'bulk_email_sender:send_in_bulk' %}"><span class="glyphicon glyphicon-send">&nbspSend_Bulk-email</span></a></li>
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
