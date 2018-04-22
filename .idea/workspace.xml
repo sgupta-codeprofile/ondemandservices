@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18411b45-22df-448b-96d4-b073f2369292" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/resume_maker/templates/resume_maker/header.html" afterPath="$PROJECT_DIR$/resume_maker/templates/resume_maker/header.html" />
+      <change beforePath="$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html" afterPath="$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html" />
+      <change beforePath="$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html" afterPath="$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html" />
+      <change beforePath="$PROJECT_DIR$/image_resizer/templates/image_resizer/resize_success.html" afterPath="$PROJECT_DIR$/image_resizer/templates/image_resizer/resize_success.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,48 +15,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume_maker/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="maker.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume_maker/maker.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume_maker/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="105" lean-forward="false" selection-start-line="22" selection-start-column="105" selection-end-line="22" selection-end-column="105" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resume_maker/apps.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resume_maker/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -106,7 +65,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resume_maker/templates/resume_maker/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-2125">
@@ -114,6 +73,46 @@
               <folding>
                 <element signature="n#style#0;n#h4#0;n#div#1;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="resize_success.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/resize_success.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="signinfirst.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/signinfirst.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -153,7 +152,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/start/urls.py" />
         <option value="$PROJECT_DIR$/start/static/start/css/custom.css" />
         <option value="$PROJECT_DIR$/free_ebooks/urls.py" />
         <option value="$PROJECT_DIR$/free_ebooks/admin.py" />
@@ -177,8 +175,6 @@
         <option value="$PROJECT_DIR$/bulk_email_sender/views.py" />
         <option value="$PROJECT_DIR$/image_resizer/forms.py" />
         <option value="$PROJECT_DIR$/bulk_email_sender/templates/bulk_email_sender/resize_success.html" />
-        <option value="$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html" />
-        <option value="$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html" />
         <option value="$PROJECT_DIR$/image_resizer/views.py" />
         <option value="$PROJECT_DIR$/bulk_email_sender/templates/bulk_email_sender/somethingwentwrong.html" />
         <option value="$PROJECT_DIR$/resume_maker/maker.py" />
@@ -204,6 +200,9 @@
         <option value="$PROJECT_DIR$/start/views.py" />
         <option value="$PROJECT_DIR$/start/templates/start/header.html" />
         <option value="$PROJECT_DIR$/resume_maker/templates/resume_maker/header.html" />
+        <option value="$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html" />
+        <option value="$PROJECT_DIR$/image_resizer/templates/image_resizer/resize_success.html" />
+        <option value="$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html" />
       </list>
     </option>
   </component>
@@ -339,28 +338,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resume_maker/templates/resume_maker/maker.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="28" lean-forward="false" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/free_ebooks/templates/free_ebooks/header.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="51" column="34" lean-forward="false" selection-start-line="49" selection-start-column="19" selection-end-line="55" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/email_recorder/templates/resume_maker/maker.py" />
     <entry file="file://$PROJECT_DIR$/email_recorder/static/email_recorder/css/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -727,6 +704,38 @@
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#1;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="37" column="51" lean-forward="false" selection-start-line="37" selection-start-column="51" selection-end-line="37" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/resize_success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="36" selection-end-line="4" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/signinfirst.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/image_resizer/templates/image_resizer/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="65" lean-forward="false" selection-start-line="21" selection-start-column="65" selection-end-line="21" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>

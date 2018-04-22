@@ -4,6 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>Image Resizer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Image resizer is the free online tool which resize the JPEG formate images, you can resize your image in just few click and its free" />
+<meta name="keywords" content="Image resizer , free jpeg image resizer, free image compressor , resize image,resize, passport size ,image">
+<meta name="author" content="shubham gupta">
+<meta name="language" content="english">
+<meta name="robots" content="noodp" />
+<meta name="robots" content="index,follow" />
+<meta name="email" content="shubhamguptaorg@gmail.com" />
+<meta name="copyright" content="ondemandservices">
+<meta name="audience" content="All"/>
+<meta property="og:type" content="Website" />
+<meta name="coverage" content="worldwide"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <link rel="stylesheet" href="{% static 'free_ebooks/css/bootstrap.min.css' %}">
        <script src="{% static 'free_ebooks/css/bootstrap.min.js' %}"></script>
@@ -22,10 +34,10 @@
     </div>
     <div class="collapse navbar-collapse" id="mynavbar">
                 <ul class="nav navbar-nav">
-                    <!--
-                    <li><a href="$"><span class="glyphicon glyphicon-cd">&nbspCatagories</span></a></li>
-                    <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>
-                    -->
+
+                    <li><a href="{%url 'start:index'%}"><span class="glyphicon glyphicon-home">&nbspHome</span></a></li>
+               <!--     <li><a href="#}"><span class="glyphicon glyphicon-music">&nbspCatagories</span></a></li>-->
+
                 </ul>
                 <ul class="nav navbar-collapse navbar-right">
                     {% if user.is_authenticated %}
