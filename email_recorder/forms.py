@@ -18,8 +18,8 @@ class catagories(forms.Form):
 
 input_option1=[
     ('Job_Seekers','Job Seekers'),
-    ('Earn_money','Earn Money'),
-    ('Technology_lover','Technology'),
+    ('Earn_Money','Earn Money'),
+    ('Technology','Technology'),
     ('Gadgets_lover','Gadgets lover'),
     ('Political','Political'),
     ('Crypto_currency','Crypto currency')
