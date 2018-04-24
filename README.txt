@@ -27,7 +27,7 @@ Project global configuration:
 
 
 __________________________________________________________________
-Application detail:
+Application detail and local configuration:
 
 Bulk_email_sender->
 
@@ -41,3 +41,12 @@ free-books->
 1-all uploaded images and ebooks would be saved in media folder
 
 ___________________________
+Resume maker->
+1-Still under development
+______________________________________
+email-recorder->
+1-no configuration required
+_______________________________________
+image resizer->
+1- work with jpeg only
+no other configuration required
