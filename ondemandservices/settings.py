@@ -146,8 +146,8 @@ AUTHENTICATION_BACKENDS = (
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='248006577231-9mklknq24k84k4iobc89lm4jfe3f2p0k.apps.googleusercontent.com'  #Paste CLient Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'q0Q_ZwNr3AQT3klaqVyoEFYy' #Paste Secret Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY =''  #Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '' #Paste Secret Key
 
 #--------------------------------------------------------
 #end authentication for social
