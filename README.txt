@@ -2,7 +2,7 @@ ECHO is on.
 ------------------------------------------------------------------
 project admin:
 name->shubham gupta
-email->shubhamguptaorg@gmail.com
+email->sgupta.mailme@gmail.com
 contact->+91-8004487498
 ------------------------------------------------------------------
 project-description
